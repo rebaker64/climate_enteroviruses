@@ -6,7 +6,7 @@ require("tidyr")
 library("dplyr")
 
 # make center of mass and intensity for EVA71 and CVA16
-setwd("~/Dropbox/Enterovirus/Scripts/forGithub")
+setwd("")
 
 # load and generate data variables
 disease <- read.csv("china_entero.csv")
