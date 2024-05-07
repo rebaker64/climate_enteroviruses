@@ -175,19 +175,6 @@ axis(2,at = seq(1,length(prov_list),1), rev(prov_list), las=2, cex =0.9 )
 axis(1,at=seq(1,length(ls_modnames),1), ls_modnames, srt = 45, las =2)
 dev.off()
 
-# PLOT CHANGES IN COEFFICIENT OF VARIATION
-# remove outliers for visualization
-outallcv[ outallcv > 0.3] <- 0.3
-outallcv[ outallcv < -0.3] <- -0.3
-pdf("cva71_runProjAnalysis_CVchanges.pdf",height=8,width=6)
-par(mar=c(8,7,1,1))
-image.plot(x = seq(1,length(ls_modnames)),
-           y =  seq(1,length(prov_list),1), 
-           z= outallcv, col =  coolwarm(15),ylab="",yaxt="n",xlab=" ",xaxt="n", zlim=c(-0.3,0.3))
-axis(2,at = seq(1,length(prov_list),1), rev(prov_list), las=2, cex =0.9)
-axis(1,at=seq(1,length(ls_modnames),1), ls_modnames, srt = 45, las =2)
-dev.off()
-
 # PLOT CHANGES IN MAX I (ONLY WHEN includevar=TRUE)
 # remove outliers for visualization
 outallmaxi[ outallmaxi > 0.2] <- 0.2
