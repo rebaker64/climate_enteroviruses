@@ -8,7 +8,7 @@ require("lubridate")
 require("scales")
 require("tidyr")
 require("here")
-here::i_am("projections_analysis.R")
+here::i_am("Fig3_Projections.R")
 includevar =FALSE # whether to include variability
 
 # load longer time series of observational data to use for variability analysis
