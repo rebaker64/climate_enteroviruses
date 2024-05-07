@@ -7,12 +7,13 @@ All code for this analysis was developed in R version 4.2.1 (2022-06-23) "Funny-
 **Main scripts:**
 
 Fig1.R develops calculations for the center of gravity (mean timing of cases) and intensity of the epidemic across locations in China using the data published in Takahashi 2016 (reproduced here) https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001958. 
+(run time: <1 minute)
 
-Fig2_make_empbetas_**.R constructs the dataset of empirical transmission rates for EVA71 and CVA16. 
+Fig2_make_empbetas_**.R constructs the dataset of empirical transmission rates for EVA71 and CVA16. (run time 1 minute)
 
-Fig2_Regressions.R fits the regression model and plots the coefficients as displayed in Fig 2A. 
+Fig2_Regressions.R fits the regression model and plots the coefficients as displayed in Fig 2A. (run time < 1 minute)
 
-Fig3_Projections.R used the coefficients of the regression models and province-level climate projections to simulate model outbreaks under current and future climates to estimate impact on outbreak size for CVA16 and EVA71
+Fig3_Projections.R used the coefficients of the regression models and province-level climate projections to simulate model outbreaks under current and future climates to estimate impact on outbreak size for CVA16 and EVA71 (3 minutes)
 
 **Data files:**
 
